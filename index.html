@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MC Texture Converter | Java to Bedrock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="minecraft-logo">MC TEXTURE CONVERTER</h1>
+      <p class="header-subtitle">Convert Java texture packs to Bedrock - Fast & Easy</p>
+    </header>
+    
+    <div class="main-content">
+      <div class="cube cube-1"></div>
+      <div class="cube cube-2"></div>
+      <div class="cube cube-3"></div>
+      
+      <div class="conversion-steps fade-in" style="animation-delay: 0.1s;">
+        <div class="step active">
+          <div class="step-icon">1</div>
+          <div class="step-title">Upload</div>
+          <div class="step-desc">Drop your Java .zip pack</div>
+        </div>
+        <div class="step">
+          <div class="step-icon">2</div>
+          <div class="step-title">Convert</div>
+          <div class="step-desc">Automatic format conversion</div>
+        </div>
+        <div class="step">
+          <div class="step-icon">3</div>
+          <div class="step-title">Customize</div>
+          <div class="step-desc">Add custom attribution</div>
+        </div>
+        <div class="step">
+          <div class="step-icon">4</div>
+          <div class="step-title">Download</div>
+          <div class="step-desc">Get your Bedrock pack</div>
+        </div>
+      </div>
+      
+      <div class="upload-container fade-in" style="animation-delay: 0.3s;">
+        <div class="drop-area floating" id="dropArea">
+          <div class="drop-icon">📦</div>
+          <div class="drop-text">Drop your Java Texture Pack</div>
+          <div class="drop-subtext">or click to browse files</div>
+        </div>
+        <input type="file" id="fileInput" class="file-input" accept=".zip">
+      </div>
+      
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="progress-text" id="progressText">Processing...</div>
+      </div>
+      
+      <div class="download-section" id="downloadSection">
+        <div class="download-title">Conversion Complete! 🎉</div>
+        <div class="download-info">
+          Your texture pack has been successfully converted to Bedrock format with the custom attribution added: 
+          <br><br>
+          <span class="pack-description">Ported by Huntiez pack porter</span>
+        </div>
+        <a href="#" class="download-button pulsing" id="downloadButton">Download Bedrock Pack</a>
+      </div>
+      
+      <div class="info-section fade-in" style="animation-delay: 0.5s;">
+        <h2 class="info-title">Features</h2>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <span class="feature-icon">✓</span>
+            <span>Convert Java texture packs to Bedrock format in seconds</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">✓</span>
+            <span>Automatic file structure reorganization</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">✓</span>
+            <span>Custom attribution added to pack description</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">✓</span>
+            <span>Texture resolution preservation</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-icon">✓</span>
+            <span>Compatible with all versions of Minecraft Bedrock Edition</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <footer>
+      <p class="footer-text">© 2025 MC Texture Converter | All Minecraft assets belong to Mojang Studios</p>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
