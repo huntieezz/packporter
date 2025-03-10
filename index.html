@@ -5,98 +5,262 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MC Texture Converter | Java to Bedrock</title>
   <link rel="stylesheet" href="styles.css">
-  
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <!-- Background Effects -->
+  <div class="minecraft-bg-overlay"></div>
+  <div class="floating-blocks">
+    <div class="minecraft-block dirt"></div>
+    <div class="minecraft-block stone"></div>
+    <div class="minecraft-block grass"></div>
+    <div class="minecraft-block diamond"></div>
+    <div class="minecraft-block redstone"></div>
+    <div class="minecraft-block gold"></div>
+    <div class="minecraft-block obsidian"></div>
+    <div class="minecraft-block tnt"></div>
+  </div>
+  
+  <!-- Particle Effects -->
+  <div class="ender-particles">
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+  </div>
+  
+  <div class="waterfall">
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+  </div>
+  
+  <div class="xp-orbs">
+    <div class="xp-orb"></div>
+    <div class="xp-orb"></div>
+    <div class="xp-orb"></div>
+    <div class="xp-orb"></div>
+    <div class="xp-orb"></div>
+  </div>
+  
+  <div class="day-night-cycle"></div>
+
+  <!-- Main Container -->
   <div class="container">
+    <!-- Navigation Bar -->
+    <nav class="minecraft-navbar">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="MC Texture Converter Logo" class="nav-logo-img">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">More <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="faq.html">FAQ</a>
+            <a href="tutorials.html">Tutorials</a>
+            <li><a href="credits.html">Credits</a></li>
+          </div>
+        </li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://discord.gg/textures" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://twitter.com/mctextureconverter" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/mctextureconverter" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
     <header>
       <h1 class="minecraft-logo">MC TEXTURE CONVERTER</h1>
+      <div class="pickaxe-animation">⛏️</div>
       <p class="header-subtitle">Convert Java texture packs to Bedrock - Fast & Easy</p>
     </header>
     
+    <!-- Main Content Section -->
     <div class="main-content">
-      <div class="cube cube-1"></div>
-      <div class="cube cube-2"></div>
-      <div class="cube cube-3"></div>
-      
-      <div class="conversion-steps fade-in" style="animation-delay: 0.1s;">
-        <div class="step active">
-          <div class="step-icon">1</div>
-          <div class="step-title">Upload</div>
-          <div class="step-desc">Drop your Java .zip pack</div>
+      <div class="minecraft-panel">
+        <div class="conversion-steps">
+          <div class="step-panel">
+            <div class="step active" data-step="1">
+              <div class="step-icon">1</div>
+              <div class="step-content">
+                <div class="step-title">Upload</div>
+                <div class="step-desc">Drop your Java .zip pack</div>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div class="step-icon">2</div>
+              <div class="step-content">
+                <div class="step-title">Convert</div>
+                <div class="step-desc">Automatic format conversion</div>
+              </div>
+            </div>
+            <div class="step" data-step="3">
+              <div class="step-icon">3</div>
+              <div class="step-content">
+                <div class="step-title">Customize</div>
+                <div class="step-desc">Add custom attribution</div>
+              </div>
+            </div>
+            <div class="step" data-step="4">
+              <div class="step-icon">4</div>
+              <div class="step-content">
+                <div class="step-title">Download</div>
+                <div class="step-desc">Get your Bedrock pack</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="step">
-          <div class="step-icon">2</div>
-          <div class="step-title">Convert</div>
-          <div class="step-desc">Automatic format conversion</div>
+        
+        <div class="upload-container minecraft-panel-inner">
+          <div class="drop-area" id="dropArea">
+            <div class="chest-animation">
+              <div class="chest-top"></div>
+              <div class="chest-bottom"></div>
+            </div>
+            <div class="drop-text">Drop your Java Texture Pack</div>
+            <div class="drop-subtext">or click to browse files</div>
+          </div>
+          <input type="file" id="fileInput" class="file-input" accept=".zip">
         </div>
-        <div class="step">
-          <div class="step-icon">3</div>
-          <div class="step-title">Customize</div>
-          <div class="step-desc">Add custom attribution</div>
+        
+        <div class="progress-container minecraft-panel-inner" id="progressContainer">
+          <div class="progress-title">Mining textures...</div>
+          <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <div class="progress-text" id="progressText">Processing...</div>
+          <div class="creeper-animation">
+            <div class="creeper-face"></div>
+          </div>
         </div>
-        <div class="step">
-          <div class="step-icon">4</div>
-          <div class="step-title">Download</div>
-          <div class="step-desc">Get your Bedrock pack</div>
+        
+        <div class="download-section minecraft-panel-inner" id="downloadSection">
+          <div class="download-title">Conversion Complete! 🎉</div>
+          <div class="firework-animation"></div>
+          <div class="download-info">
+            Your texture pack has been successfully converted to Bedrock format with the custom attribution added:
+            <br><br>
+            <span class="pack-description minecraft-text-glow">Ported by Huntiez pack porter</span>
+          </div>
+          <a href="#" class="minecraft-button" id="downloadButton">
+            <span class="button-text">Download Bedrock Pack</span>
+          </a>
         </div>
       </div>
       
-      <div class="upload-container fade-in" style="animation-delay: 0.3s;">
-        <div class="drop-area floating" id="dropArea">
-          <div class="drop-icon">📦</div>
-          <div class="drop-text">Drop your Java Texture Pack</div>
-          <div class="drop-subtext">or click to browse files</div>
-        </div>
-        <input type="file" id="fileInput" class="file-input" accept=".zip">
-      </div>
-      
-      <div class="progress-container" id="progressContainer">
-        <div class="progress-bar-container">
-          <div class="progress-bar" id="progressBar"></div>
-        </div>
-        <div class="progress-text" id="progressText">Processing...</div>
-      </div>
-      
-      <div class="download-section" id="downloadSection">
-        <div class="download-title">Conversion Complete! 🎉</div>
-        <div class="download-info">
-          Your texture pack has been successfully converted to Bedrock format with the custom attribution added: 
-          <br><br>
-          <span class="pack-description">Ported by Huntiez pack porter</span>
-        </div>
-        <a href="#" class="download-button pulsing" id="downloadButton">Download Bedrock Pack</a>
-      </div>
-      
-      <div class="info-section fade-in" style="animation-delay: 0.5s;">
+      <div class="info-section minecraft-panel">
         <h2 class="info-title">Features</h2>
         <ul class="feature-list">
           <li class="feature-item">
-            <span class="feature-icon">✓</span>
+            <span class="feature-icon">💎</span>
             <span>Convert Java texture packs to Bedrock format in seconds</span>
           </li>
           <li class="feature-item">
-            <span class="feature-icon">✓</span>
+            <span class="feature-icon">🧱</span>
             <span>Automatic file structure reorganization</span>
           </li>
           <li class="feature-item">
-            <span class="feature-icon">✓</span>
+            <span class="feature-icon">📝</span>
             <span>Custom attribution added to pack description</span>
           </li>
           <li class="feature-item">
-            <span class="feature-icon">✓</span>
+            <span class="feature-icon">🔍</span>
             <span>Texture resolution preservation</span>
           </li>
           <li class="feature-item">
-            <span class="feature-icon">✓</span>
+            <span class="feature-icon">🌐</span>
             <span>Compatible with all versions of Minecraft Bedrock Edition</span>
           </li>
         </ul>
+        <a href="features.html" class="view-more-link">View all features <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
     
+    <!-- CTA Section -->
+    <div class="cta-section">
+      <div class="minecraft-panel">
+        <h2 class="cta-title">Ready to convert your texture packs?</h2>
+        <p class="cta-text">Join our community of Minecraft creators and get access to exclusive features!</p>
+        <div class="cta-buttons">
+          <a href="#" class="minecraft-button primary-button">
+            <span class="button-text">Get Started</span>
+          </a>
+          <a href="contact.html" class="minecraft-button secondary-button">
+            <span class="button-text">Contact Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Section -->
     <footer>
-      <p class="footer-text">© 2025 MC Texture Converter | All Minecraft assets belong to Mojang Studios</p>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="MC Texture Converter Logo" class="footer-logo-img">
+          <p>Convert Java texture packs to Bedrock format with ease</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="how-it-works.html">How It Works</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="tutorials.html">Tutorials</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://discord.gg/textures"><i class="fab fa-discord"></i> Discord</a></li>
+              <li><a href="https://twitter.com/mctextureconverter"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="https://github.com/mctextureconverter"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="mailto:contact@mctextureconverter.com"><i class="fas fa-envelope"></i> Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 MC Texture Converter | All Minecraft assets belong to Embeded Studios</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
     </footer>
   </div>
   

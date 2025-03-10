@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | MC Texture Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="minecraft-bg-overlay"></div>
+  <div class="floating-blocks">
+    <div class="minecraft-block dirt"></div>
+    <div class="minecraft-block stone"></div>
+    <div class="minecraft-block grass"></div>
+    <div class="minecraft-block diamond"></div>
+    <div class="minecraft-block redstone"></div>
+    <div class="minecraft-block gold"></div>
+    <div class="minecraft-block obsidian"></div>
+    <div class="minecraft-block tnt"></div>
+  </div>
+  
+  <div class="ender-particles">
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+  </div>
+  
+  <div class="day-night-cycle"></div>
+
+  <div class="container">
+    <nav class="minecraft-navbar">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="MC Texture Converter Logo" class="nav-logo-img">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">More <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="faq.html">FAQ</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="blog.html">Blog</a>
+          </div>
+        </li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://discord.gg/textures" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://twitter.com/mctextureconverter" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/mctextureconverter" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <header>
+      <h1 class="minecraft-logo">TEXTURE GALLERY</h1>
+      <p class="header-subtitle">Showcase of texture packs converted with our tool</p>
+    </header>
+    
+    <div class="main-content">
+      <div class="minecraft-panel">
+        <div class="gallery-controls">
+          <div class="gallery-filter">
+            <span class="filter-label">Filter by:</span>
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="realistic">Realistic</button>
+            <button class="filter-button" data-filter="cartoon">Cartoon</button>
+            <button class="filter-button" data-filter="fantasy">Fantasy</button>
+            <button class="filter-button" data-filter="minimalist">Minimalist</button>
+          </div>
+          <div class="gallery-sort">
+            <span class="sort-label">Sort by:</span>
+            <select class="sort-dropdown">
+              <option value="newest">Newest</option>
+              <option value="oldest">Oldest</option>
+              <option value="popular">Most Popular</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="realistic">
+            <div class="gallery-image">
+              <img src="images/gallery/pack1.png" alt="Realistic Nature Pack">
+              <div class="gallery-overlay">
+                <a href="gallery-detail.html?id=1" class="view-button">View Details</a>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <h3>Realistic Nature Pack</h3>
+              <p>Ultra HD textures for natural blocks and foliage</p>
+              <div class="gallery-tags">
+                <span class="gallery-tag">Realistic</span>
+                <span class="gallery-tag">128x</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="cartoon">
+            <div class="gallery-image">
+              <img src="images/gallery/pack2.png" alt="Cartoon Adventure">
+              <div class="gallery-overlay">
+                <a href="gallery-detail.html?id=2" class="view-button">View Details</a>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <h3>Cartoon Adventure</h3>
+              <p>Vibrant and playful textures with bold outlines</p>
+              <div class="gallery-tags">
+                <span class="gallery-tag">Cartoon</span>
+                <span class="gallery-tag">16x</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="fantasy">
+            <div class="gallery-image">
+              <img src="images/gallery/pack3.png" alt="Medieval Fantasy">
+              <div class="gallery-overlay">
+                <a href="gallery-detail.html?id=3" class="view-button">View Details</a>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <h3>Medieval Fantasy</h3>
+              <p>RPG-inspired textures perfect for castle builds</p>
+              <div class="gallery-tags">
+                <span class="gallery-tag">Fantasy</span>
+                <span class="gallery-tag">32x</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="minimalist">
+            <div class="gallery-image">
+              <img src="images/gallery/pack4.png" alt="Clean Minimalist">
+              <div class="gallery-overlay">
+                <a href="gallery-detail.html?id=4" class="view-button">View Details</a>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <h3>Clean Minimalist</h3>
+              <p>Simple and clean textures with modern design</p>
+              <div class="gallery-tags">
+                <span class="gallery-tag">Minimalist</span>
+                <span class="gallery-tag">16x</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="realistic">
+            <div class="gallery-image">
+              <img src="images/gallery/pack5.png" alt="Photorealistic">
+              <div class="gallery-overlay">
+                <a href="gallery-detail.html?id=5" class="view-button">View Details</a>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <h3>Photorealistic</h3>
+              <p>Extremely detailed textures with PBR mapping</p>
+              <div class="gallery-tags">
+                <span class="gallery-tag">Realistic</span>
+                <span class="gallery-tag">256x</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="fantasy">
+            <div class="gallery-image">
+              <img src="images/gallery/pack6.png" alt="Mythic Realms">
+              <div class="gallery-overlay">
+                <a href="gallery-detail.html?id=6" class="view-button">View Details</a>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <h3>Mythic Realms</h3>
+              <p>Fantasy-inspired textures with magical elements</p>
+              <div class="gallery-tags">
+                <span class="gallery-tag">Fantasy</span>
+                <span class="gallery-tag">64x</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="cartoon">
+            <div class="gallery-image">
+              <img src="images/gallery/pack7.png" alt="Pixel Paradise">
+              <div class="gallery-overlay">
+                <a href="gallery-detail.html?id=7" class="view-button">View Details</a>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <h3>Pixel Paradise</h3>
+              <p>Colorful pixel art style textures</p>
+              <div class="gallery-tags">
+                <span class="gallery-tag">Cartoon</span>
+                <span class="gallery-tag">16x</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="minimalist">
+            <div class="gallery-image">
+              <img src="images/gallery/pack8.png" alt="Monochrome">
+              <div class="gallery-overlay">
+                <a href="gallery-detail.html?id=8" class="view-button">View Details</a>
+              </div>
+            </div>
+            <div class="gallery-caption">
+              <h3>Monochrome</h3>
+              <p>Black and white textures with subtle gradient effects</p>
+              <div class="gallery-tags">
+                <span class="gallery-tag">Minimalist</span>
+                <span class="gallery-tag">32x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-pagination">
+          <button class="pagination-button active">1</button>
+          <button class="pagination-button">2</button>
+          <button class="pagination-button">3</button>
+          <span class="pagination-ellipsis">...</span>
+          <button class="pagination-button">7</button>
+          <button class="pagination-button next-page"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="submission-cta">
+          <h2>Want to showcase your converted pack?</h2>
+          <p>Submit your texture pack to our gallery and share it with the community!</p>
+          <a href="submit-pack.html" class="minecraft-button">
+            <span class="button-text">Submit Your Pack</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="MC Texture Converter Logo" class="footer-logo-img">
+          <p>Convert Java texture packs to Bedrock format with ease</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="how-it-works.html">How It Works</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="tutorials.html">Tutorials</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://discord.gg/textures"><i class="fab fa-discord"></i> Discord</a></li>
+              <li><a href="https://twitter.com/mctextureconverter"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="https://github.com/mctextureconverter"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="mailto:contact@mctextureconverter.com"><i class="fas fa-envelope"></i> Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 MC Texture Converter | All Minecraft assets belong to Embeded Studios</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

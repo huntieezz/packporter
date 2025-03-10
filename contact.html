@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | MC Texture Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="minecraft-bg-overlay"></div>
+  <div class="floating-blocks">
+    <div class="minecraft-block dirt"></div>
+    <div class="minecraft-block stone"></div>
+    <div class="minecraft-block grass"></div>
+    <div class="minecraft-block diamond"></div>
+    <div class="minecraft-block redstone"></div>
+    <div class="minecraft-block gold"></div>
+    <div class="minecraft-block obsidian"></div>
+    <div class="minecraft-block tnt"></div>
+  </div>
+  
+  <div class="ender-particles">
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+    <div class="ender-particle"></div>
+  </div>
+  
+  <div class="waterfall">
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+    <div class="water-drop"></div>
+  </div>
+  
+  <div class="xp-orbs">
+    <div class="xp-orb"></div>
+    <div class="xp-orb"></div>
+    <div class="xp-orb"></div>
+    <div class="xp-orb"></div>
+    <div class="xp-orb"></div>
+  </div>
+  
+  <div class="day-night-cycle"></div>
+
+  <div class="container">
+    <nav class="minecraft-navbar">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="MC Texture Converter Logo" class="nav-logo-img">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">More <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="faq.html">FAQ</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://discord.gg/textures" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://twitter.com/mctextureconverter" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/mctextureconverter" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <header>
+      <h1 class="minecraft-logo">CONTACT US</h1>
+      <p class="header-subtitle">Get in touch with our team</p>
+    </header>
+    
+    <div class="main-content">
+      <div class="minecraft-panel">
+        <div class="contact-container">
+          <div class="contact-info-section">
+            <h2 class="section-title">Connect With Us</h2>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Email Us</h3>
+                  <p>support@mctextureconverter.com</p>
+                  <p class="response-time">Response Time: 24-48 hours</p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Join Our Discord</h3>
+                  <p>discord.gg/textures</p>
+                  <p class="response-time">For real-time support and community</p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Follow on Twitter</h3>
+                  <p>@mctextureconverter</p>
+                  <p class="response-time">For updates and announcements</p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>GitHub Issues</h3>
+                  <p>github.com/mctextureconverter</p>
+                  <p class="response-time">For bug reports and feature requests</p>
+                </div>
+            </div>
+            
+            <div class="contact-form-section">
+              <h2 class="section-title">Send Us a Message</h2>
+              <form class="minecraft-form" id="contactForm">
+                <div class="form-group">
+                  <label for="name">Your Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Steve" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Your Email:</label>
+                  <input type="email" id="email" name="email" placeholder="steve@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject">Subject:</label>
+                  <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a topic</option>
+                    <option value="general">General Question</option>
+                    <option value="support">Technical Support</option>
+                    <option value="bug">Bug Report</option>
+                    <option value="feature">Feature Request</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Your Message:</label>
+                  <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                  <input type="checkbox" id="newsletter" name="newsletter">
+                  <label for="newsletter">Subscribe to our newsletter</label>
+                </div>
+                
+                <button type="submit" class="minecraft-button">
+                  <span class="button-text">Send Message</span>
+                </button>
+              </form>
+            </div>
+          </div>
+          
+          <div class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-items">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How quickly will I receive a response?</h3>
+                  <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                  <p>We typically respond to all inquiries within 24-48 hours during business days. For faster assistance, please join our Discord server.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Where can I report bugs?</h3>
+                  <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                  <p>Bug reports can be submitted through our GitHub repository or through this contact form by selecting "Bug Report" as the subject.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How can I suggest a new feature?</h3>
+                  <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="faq-answer">
+                  <p>We welcome feature suggestions! You can submit them through this contact form or directly on our GitHub repository as an issue.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="minecraft-footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="MC Texture Converter Logo">
+            <p>MC Texture Converter</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="credits.html">Credits</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Community</h3>
+              <ul>
+                <li><a href="https://discord.gg/textures" target="_blank">Discord</a></li>
+                <li><a href="https://twitter.com/mctextureconverter" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/mctextureconverter" target="_blank">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 MC Texture Converter. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <span class="divider">|</span>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  
+    <script src="scripts.js"></script>
+    <script>
+      // FAQ Toggle Functionality
+      document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+          const answer = question.nextElementSibling;
+          const icon = question.querySelector('.toggle-icon i');
+          
+          answer.classList.toggle('active');
+          
+          if (answer.classList.contains('active')) {
+            icon.classList.replace('fa-plus', 'fa-minus');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          } else {
+            icon.classList.replace('fa-minus', 'fa-plus');
+            answer.style.maxHeight = '0';
+          }
+        });
+      });
+      
+      // Form Submission Handling
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Here you would normally send the form data to your server
+        // For demo purposes, we'll just show a success message
+        
+        const formData = new FormData(this);
+        console.log('Form submitted with data:', Object.fromEntries(formData));
+        
+        // Show success message (you would implement this)
+        alert('Thank you for your message! We will get back to you soon.');
+        
+        // Reset the form
+        this.reset();
+      });
+      
+      // Mobile Menu Toggle
+      document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+        this.classList.toggle('active');
+      });
+    </script>
+  </body>
+  </html>
